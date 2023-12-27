@@ -114,6 +114,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { IoIosArrowDropdown } from "react-icons/io";
 
 import close from "../Assets/close.svg";
 import menu from "../Assets/menu.svg";
@@ -124,6 +125,7 @@ import Link from "next/link";
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
+  const [open,setOpen]=useState(false)
 
   return (
     <nav className=" w-full flex py-6 justify-between items-center container ">
@@ -143,13 +145,31 @@ const Navbar = () => {
             {nav.title ? (
               <Link href={nav.id}>{nav.title}</Link>
             ) : (
-              <select className="w-[8rem]">
-                {nav.sublinks.map((i) => (
-                  <option key={i.title} value="">
-                    {i.title}
-                  </option>
-                ))}
-              </select>
+              <div className="flex  flex-col ">
+               
+            
+            <div   className="flex items-center justify-between relative ">
+             <Link href={"services"} onClick={()=>setOpen(!open)} >  dddddfff</Link>
+              <div className=""><IoIosArrowDropdown /></div>
+             </div>
+            
+            
+           <ul className={`absolute ${open? " flex text-black":"hidden"} `}>
+           <li className={`flex    flex-col  `}> <Link href={"home"}>Offshore Team</Link>
+             <Link href={"home"}>Offshore Team</Link>
+             <Link href={"home"}>Offshore Team</Link>
+             <Link href={"home"}>Offshore Team</Link>
+             <Link href={"home"}>Offshore Team</Link>
+             <Link href={"home"}>Offshore Team</Link>
+             <Link href={"home"}>Offshore Team</Link>
+             <Link href={"home"}>Offshore Team</Link>
+             <Link href={"home"}>Offshore Team</Link>
+             </li>
+           </ul>
+           
+             
+               
+              </div>
             )}
           </li>
         ))}
@@ -199,17 +219,17 @@ const Navbar = () => {
                       {nav.title}
                     </Link>
                   ) : (
-                    <select className="w-[8rem] leading-[50px] list-item   m_title lowercase">
-                      {nav.sublinks.map((i) => (
-                        <option
-                          className="bg-red-600 border-none outline-none"
-                          key={i.title}
-                          value=""
-                        >
-                          {i.title}
-                        </option>
-                      ))}
-                    </select>
+                    <div className="flex  flex-col">
+             <div className="flex items-center">
+             <Link href={"services"}>  dddddfff </Link>
+              <div><IoIosArrowDropdown /></div>
+             </div>
+            
+             <ul><li>
+              <Link href={"services"}>Offshore Team</Link></li></ul>
+             
+               
+              </div>
                   )}
                 </li>
               ))}

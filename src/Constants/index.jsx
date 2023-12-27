@@ -28,8 +28,7 @@ export const navLinks = [
   },
   {
     id: "services",
-    title: "SERVICES",
-
+    subtitle: "SERVICES",
     // sublinks: [
     //   {
     //     id: 1,
