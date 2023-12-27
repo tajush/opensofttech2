@@ -6,7 +6,7 @@ import { features, features2 } from "../Constants";
 import Image from "next/image";
 import Link from "next/link";
 
-import sign1 from "@/Assets/sign.svg";
+
 
 
 const Features = () => {
