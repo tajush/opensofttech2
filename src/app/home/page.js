@@ -1,27 +1,18 @@
+import React from 'react'
 import Discussion from '@/Components/Discussion';
 import Features from '@/Components/Features';
 
 import Hero from '@/Components/Hero'
 
 import Process from '@/Components/Process';
-import Selector from '@/Components/Selector';
 import Services from "@/Components/Services";
 import Technology from '@/Components/Technology';
-
 import WhyWe from '@/Components/WhyWe';
 
-
-
-
-
-export default function Home() {
+const page = () => {
   return (
     <div>
-     
-    
-      <Selector />
-     
-      <Hero />
+         <Hero />
       <Services />
       <Features />
       <WhyWe />
@@ -29,9 +20,8 @@ export default function Home() {
       <Technology />
       <Discussion />
       
-      
-    
-
     </div>
   )
 }
+
+export default page
