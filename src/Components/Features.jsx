@@ -5,19 +5,15 @@ import sign from "../Assets/sign.svg";
 import { features, features2 } from "../Constants";
 import Image from "next/image";
 import Link from "next/link";
-import HeaderTop from "./HeaderTop";
+
 import sign1 from "@/Assets/sign.svg";
-import ProjectTab from "./ProjectTab";
+
 
 const Features = () => {
   return (
     <section className="container">
-      <HeaderTop
-        title="Our Projects"
-        img={sign1}
-        para="Our experienced team of designers & developers are eager to assist you on your path to success."
-      />
-      <ProjectTab />
+     
+     
       <div className=" relative py-[150px]  ">
         <h1 className="md:text-[48px] md:leading-[55.68px] text-[35px] leading-[40px] font-semibold mb-[25px]">
           Featured Projects
