@@ -28,37 +28,39 @@ export const navLinks = [
   },
   {
     id: "services",
-    sublinks: [
-      {
-        id: 1,
-        title: "SERVICES",
-      },
-      {
-        id: 2,
-        title: "Offshore Team",
-      },
-      {
-        id: 3,
-        title: "Software Development",
-      },
-      {
-        id: 4,
-        title: "Design & Development",
-      },
+    title: "SERVICES",
 
-      {
-        id: 5,
-        title: "Mobile Application",
-      },
-      {
-        id: 6,
-        title: "DevOps",
-      },
-      {
-        id: 7,
-        title: "Digital Marketing",
-      },
-    ],
+    // sublinks: [
+    //   {
+    //     id: 1,
+    //     title: "SERVICES",
+    //   },
+    //   {
+    //     id: 2,
+    //     title: "Offshore Team",
+    //   },
+    //   {
+    //     id: 3,
+    //     title: "Software Development",
+    //   },
+    //   {
+    //     id: 4,
+    //     title: "Design & Development",
+    //   },
+
+    //   {
+    //     id: 5,
+    //     title: "Mobile Application",
+    //   },
+    //   {
+    //     id: 6,
+    //     title: "DevOps",
+    //   },
+    //   {
+    //     id: 7,
+    //     title: "Digital Marketing",
+    //   },
+    // ],
     // title: (
     //   <select className="text-black border-none outline-none" name="SERVICES" id="">
     //     <option value="SERVICES"><a href="/">SERVICES</a></option>
