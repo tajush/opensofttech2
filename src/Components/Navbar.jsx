@@ -137,7 +137,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            className={` font-normal cursor-pointer text-[16px] ${
               active === nav.title ? "text-[#4285F4]" : "text-black"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
@@ -149,12 +149,12 @@ const Navbar = () => {
                
             
             <div   className="flex items-center justify-between relative ">
-             <Link href={"services"} onClick={()=>setOpen(!open)} >  dddddfff</Link>
+             <Link href={"services"} onClick={()=>setOpen(!open)} > SERVICES</Link>
               <div className=""><IoIosArrowDropdown /></div>
              </div>
             
             
-           <ul className={`absolute ${open? " flex text-black":"hidden"} `}>
+           <ul className={`absolute top-[45px] bg-white overflow-auto h-[200px]  p-2 ${open? " flex text-black":"hidden"} `}>
            <li className={`flex    flex-col  `}> <Link href={"home"}>Offshore Team</Link>
              <Link href={"home"}>Offshore Team</Link>
              <Link href={"home"}>Offshore Team</Link>
@@ -209,7 +209,7 @@ const Navbar = () => {
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins  font-semibold cursor-pointer text-[16px] leading-[50px] text  m_title lowercase ${
+                  className={`  font-semibold cursor-pointer text-[16px] leading-[50px] text  m_title lowercase ${
                     active === nav.title ? "text-[#4285F4]" : "text-black"
                   } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
                   onClick={() => setActive(nav.title)}
