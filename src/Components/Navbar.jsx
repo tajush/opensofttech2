@@ -155,13 +155,13 @@ const Navbar = () => {
              </div>
             
             
-           <ul className={`absolute top-[45px] bg-white  h-fit w-[120px]   ${open? " flex text-black":"hidden"} `}>
-           <li className={`flex  text-[16px] leading-[20.6px]   py-[8px] px-[16px]   flex-col  `}> 
-             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>Offshore Team</Link>
-             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>Software Development</Link>
-             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>Design & Development</Link>
-             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>Mobile Application</Link>
-             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>DevOps</Link>
+           <ul className={`absolute top-[45px] bg-white  h-fit  w-[120px]   ${open? " flex text-black":"hidden"} `}>
+           <li className={`flex font-medium  text-[16px] leading-[20.6px]    px-[8px] py-[16px]   flex-col  `}> 
+             <Link className="hover:bg-blue-600 hover:text-white mb-2" href={"home"}>Offshore Team</Link>
+             <Link className="hover:bg-blue-600 hover:text-white mb-2 " href={"home"}>Software Development</Link>
+             <Link className="hover:bg-blue-600 hover:text-white mb-2 " href={"home"}>Design & Development</Link>
+             <Link className="hover:bg-blue-600 hover:text-white mb-2" href={"home"}>Mobile Application</Link>
+             <Link className="hover:bg-blue-600 hover:text-white mb-2 " href={"home"}>DevOps</Link>
              <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>Digital Marketing</Link>
              
              </li>
@@ -219,14 +219,27 @@ const Navbar = () => {
                       {nav.title}
                     </Link>
                   ) : (
-                    <div className="flex  flex-col">
-             <div className="flex items-center">
-             <Link href={"services"}>  dddddfff </Link>
-              <div><IoIosArrowDropdown /></div>
+                    <div className="flex  flex-col ">
+               
+            
+            <div   className=" flex items-center gap-2  ">
+            <div> <Link href={"services"}  > SERVICES</Link></div>
+              <div onClick={()=>setOpen(!open)}><IoIosArrowDropdown /></div>
              </div>
             
-             <ul><li>
-              <Link href={"services"}>Offshore Team</Link></li></ul>
+            
+           <ul className={`    h-fit capitalize     ${open? " flex text-black":"hidden"} `}>
+           <li className={`flex font-medium  text-[16px] leading-[20.6px]    px-[8px] py-[16px]   flex-col  `}> 
+             <Link className="hover:bg-blue-600 hover:text-white mb-2" href={"home"}>-Offshore Team</Link>
+             <Link className="hover:bg-blue-600 hover:text-white mb-2 " href={"home"}>-Software Development</Link>
+             <Link className="hover:bg-blue-600 hover:text-white mb-2 " href={"home"}>-Design & Development</Link>
+             <Link className="hover:bg-blue-600 hover:text-white mb-2" href={"home"}>-Mobile Application</Link>
+             <Link className="hover:bg-blue-600 hover:text-white mb-2 " href={"home"}>-DevOps</Link>
+             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>-Digital Marketing</Link>
+             
+             </li>
+           </ul>
+           
              
                
               </div>
