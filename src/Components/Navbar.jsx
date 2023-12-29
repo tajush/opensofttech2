@@ -132,6 +132,7 @@ const Navbar = () => {
       <Link href={"home"}>
         <Image src={logo} alt="logo" className="w-[124px] h-[32px]" />
       </Link>
+      
 
       <ul className="list-none md:flex hidden  ">
         {navLinks.map((nav, index) => (
@@ -148,22 +149,21 @@ const Navbar = () => {
               <div className="flex  flex-col ">
                
             
-            <div   className="flex items-center justify-between relative ">
-             <Link href={"services"} onClick={()=>setOpen(!open)} > SERVICES</Link>
-              <div className=""><IoIosArrowDropdown /></div>
+            <div   className="flex items-center gap-2 justify-between relative ">
+            <div> <Link href={"services"}  > SERVICES</Link></div>
+              <div onClick={()=>setOpen(!open)}><IoIosArrowDropdown /></div>
              </div>
             
             
-           <ul className={`absolute top-[45px] bg-white overflow-auto h-[200px]  p-2 ${open? " flex text-black":"hidden"} `}>
-           <li className={`flex    flex-col  `}> <Link href={"home"}>Offshore Team</Link>
-             <Link href={"home"}>Offshore Team</Link>
-             <Link href={"home"}>Offshore Team</Link>
-             <Link href={"home"}>Offshore Team</Link>
-             <Link href={"home"}>Offshore Team</Link>
-             <Link href={"home"}>Offshore Team</Link>
-             <Link href={"home"}>Offshore Team</Link>
-             <Link href={"home"}>Offshore Team</Link>
-             <Link href={"home"}>Offshore Team</Link>
+           <ul className={`absolute top-[45px] bg-white  h-fit w-[120px]   ${open? " flex text-black":"hidden"} `}>
+           <li className={`flex  text-[16px] leading-[20.6px]   py-[8px] px-[16px]   flex-col  `}> 
+             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>Offshore Team</Link>
+             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>Software Development</Link>
+             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>Design & Development</Link>
+             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>Mobile Application</Link>
+             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>DevOps</Link>
+             <Link className="hover:bg-blue-600 hover:text-white " href={"home"}>Digital Marketing</Link>
+             
              </li>
            </ul>
            
